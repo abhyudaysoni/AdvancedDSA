@@ -18,5 +18,10 @@ public class Driver {
         System.out.println();
         System.out.print("Post Order: ");
         intTree.displayPostOrderTraversal();
+        System.out.println();
+
+        System.out.println(intTree.search(28));
+        System.out.println(intTree.search(28));
+        System.out.println(intTree.search(50));
     }
 }

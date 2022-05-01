@@ -11,7 +11,6 @@ public class Tree {
         }
     }
 
-
     public void displayPreOrderTraversal() {
         if (root != null) {
             root.preOrderTraversal();
@@ -27,6 +26,14 @@ public class Tree {
     public void displayPostOrderTraversal() {
         if (root != null) {
             root.postOrderTraversal();
+        }
+    }
+
+    public boolean search(int val) {
+        if (root != null) {
+            return root.search(val);
+        } else {
+            throw new RuntimeException("Tree Empty");
         }
     }
 }

@@ -57,4 +57,19 @@ public class Node {
             }
         }
     }
+
+    public boolean search(int val) {
+        if (val == data) {
+            return true;
+        } else if (val < data) {
+            if (leftChild != null) {
+                return leftChild.search(val);
+            }
+        } else {
+            if (rightChild != null) {
+                return rightChild.search(val);
+            }
+        }
+        return false;
+    }
 }
