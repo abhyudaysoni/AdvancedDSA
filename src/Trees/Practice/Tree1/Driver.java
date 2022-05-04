@@ -23,5 +23,7 @@ public class Driver {
         System.out.println(intTree.search(28));
         System.out.println(intTree.search(28));
         System.out.println(intTree.search(50));
+        System.out.println("Max Element : " + intTree.max());
+        System.out.println("Min Element : " + intTree.min());
     }
 }

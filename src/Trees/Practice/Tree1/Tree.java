@@ -36,4 +36,20 @@ public class Tree {
             throw new RuntimeException("Tree Empty");
         }
     }
+
+    public int max() {
+        if (root != null) {
+            return root.maxElement();
+        } else {
+            return Integer.MIN_VALUE;
+        }
+    }
+
+    public int min() {
+        if (root != null) {
+            return root.minElement();
+        } else {
+            return Integer.MAX_VALUE;
+        }
+    }
 }

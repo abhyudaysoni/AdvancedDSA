@@ -72,4 +72,20 @@ public class Node {
         }
         return false;
     }
+
+    public int maxElement() {
+        if (rightChild == null) {
+            return data;
+        } else {
+            return rightChild.maxElement();
+        }
+    }
+
+    public int minElement() {
+        if (leftChild == null) {
+            return data;
+        } else {
+            return leftChild.minElement();
+        }
+    }
 }
