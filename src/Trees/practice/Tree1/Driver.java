@@ -1,4 +1,4 @@
-package Trees.Practice.Tree1;
+package Trees.practice.Tree1;
 
 public class Driver {
     public static void main(String[] args) {
