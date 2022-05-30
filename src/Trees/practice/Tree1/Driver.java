@@ -1,6 +1,8 @@
 package Trees.practice.Tree1;
 
 public class Driver {
+    private Node root;
+
     public static void main(String[] args) {
         Tree intTree = new Tree();
         intTree.insert(25);
@@ -25,5 +27,8 @@ public class Driver {
         System.out.println(intTree.search(50));
         System.out.println("Max Element : " + intTree.max());
         System.out.println("Min Element : " + intTree.min());
+
+        System.out.println("height: " + intTree.height());
+        System.out.println("intTree.diameter() = " + intTree.diameter());
     }
 }

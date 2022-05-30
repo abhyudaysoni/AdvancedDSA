@@ -52,4 +52,12 @@ public class Tree {
             return Integer.MAX_VALUE;
         }
     }
+
+    public int height() {
+        return root.heightOfTree();
+    }
+
+    public int diameter() {
+        return root.diameterOfTree();
+    }
 }

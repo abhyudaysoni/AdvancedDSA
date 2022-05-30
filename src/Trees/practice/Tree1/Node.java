@@ -88,4 +88,29 @@ public class Node {
             return leftChild.minElement();
         }
     }
+
+    public int heightOfTree() {
+        if (leftChild == null || rightChild == null) {
+            return 0;
+        } else {
+            int lh = leftChild.heightOfTree();
+            int rh = rightChild.heightOfTree();
+            if (lh > rh) {
+                return lh + 1;
+            } else
+                return rh + 1;
+        }
+    }
+
+    public int diameterOfTree() {
+        if (leftChild == null || rightChild == null) {
+            return 0;
+        } else {
+            int lh = leftChild.heightOfTree();
+            int rh = rightChild.heightOfTree();
+            int ld = leftChild.diameterOfTree();
+            int rd = rightChild.diameterOfTree();
+            return Math.max(lh + rh + 1, Math.max(ld, rd));
+        }
+    }
 }
